@@ -1,0 +1,119 @@
+.calc-bg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calc-bg .calc {
+  width: 300px;
+  height: 450px;
+  background-color: #d8d8d8;
+  border: 1px solid #acacac;
+  box-shadow: inset 0px 0px 30px rgba(248, 248, 248, 0.637),
+    0px 0px 10px rgba(112, 109, 109, 0.555);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calc .calc__title-bar {
+  width: 100%;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0.7;
+}
+
+.calc .calc__title-bar .close {
+  cursor: pointer;
+}
+
+.calc .equation {
+  margin-top: 20px;
+  width: 95%;
+  height: 5%;
+  background-color: #ececec;
+  box-shadow: inset 0 0 5px rgba(160, 160, 160, 0.2);
+  border: 1px solid #acacac;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.calc .result {
+  margin-top: 10px;
+  width: 95%;
+  height: 10%;
+  background-color: #ececec;
+  box-shadow: inset 0 0 5px rgba(160, 160, 160, 0.2);
+  border: 1px solid #acacac;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 30px;
+}
+
+.calc .form {
+  margin-top: 20px;
+  width: 95%;
+  height: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.form button {
+  width: 23%;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: cener;
+  background-color: #eeeeee;
+  box-shadow: inset 0 0 10px rgba(196, 196, 196, 0.3),
+    0 0 2px rgba(196, 196, 196, 0.3);
+  border: 1px solid #dae2e2;
+  border-radius: 10%;
+  font-size: 16px;
+}
+
+.form button.num {
+  background-color: white;
+  font-weight: 700;
+}
+
+.form button.equal {
+  background-color: rgb(240, 122, 148);
+  font-weight: 700;
+}
+
+.form button.op {
+  font-size: 24px;
+}
+
+.form button:active {
+  animation: 0.5s btnanime ease;
+}
+
+@keyframes btnanime {
+  from {
+    transform: none;
+  }
+  to {
+    transform: scale(1.5, 1.5);
+  }
+}
+
+.form button:focus {
+  outline: none;
+}
+
+.hidden {
+  display: none;
+}

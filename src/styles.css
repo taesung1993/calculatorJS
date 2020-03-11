@@ -1,0 +1,22 @@
+@import "reset.css";
+@import "calc.css";
+@import "btnwrapper.css";
+@import "boxanime.css";
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-image: url("../images/bg.png");
+  font-family: Consolas;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

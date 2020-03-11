@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OpenCalcPage | Taesung1993</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.12.1/css/v4-shims.css"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="btn-wrapper">
+      <div class="anime-wrapper">
+        <div class="animebox">
+          <div class="box1"></div>
+          <div class="box2"></div>
+          <div class="box3"></div>
+          <div class="box4"></div>
+          <div class="box5"></div>
+          <div class="box6"></div>
+        </div>
+      </div>
+      <span class="giveinfo">To open calc, Press the "OPEN" button!</span>
+      <button class="open-calc" id="open">open</button>
+    </div>
+    <div class="calc-bg hidden">
+      <div class="calc">
+        <header class="calc__title-bar">
+          <div class="title__column">
+            <span class="title__content">Calculator</span>
+          </div>
+          <div class="title__column">
+            <span class="close"><i class="fas fa-times"></i></span>
+          </div>
+        </header>
+        <div class="equation" id="equation"></div>
+        <div class="result" id="result"></div>
+        <div class="form" id="form">
+          <button id="%" onclick="btnInput('%')">%</button>
+          <button id="CE" onclick="btnInput('CE')">CE</button>
+          <button id="C" onclick="btnInput('C')">C</button>
+          <button id="BACK" onclick="btnInput('back')">BACK</button>
+          <button id="１/ｘ" onclick="btnInput('１/ｘ')">１/ｘ</button>
+          <button id="ｘ²" onclick="btnInput('ｘ²')">ｘ²</button>
+          <button id="²√ｘ" onclick="btnInput('²√ｘ')">²√ｘ</button>
+          <button id="÷" class="op" onclick="btnInput('/')">÷</button>
+          <button id="7" class="num" onclick="btnInput('7')">7</button>
+          <button id="8" class="num" onclick="btnInput('8')">8</button>
+          <button id="9" class="num" onclick="btnInput('9')">9</button>
+          <button id="×" class="op" onclick="btnInput('*')">×</button>
+          <button id="4" class="num" onclick="btnInput('4')">4</button>
+          <button id="5" class="num" onclick="btnInput('5')">5</button>
+          <button id="6" class="num" onclick="btnInput('6')">6</button>
+          <button id="－" class="op" onclick="btnInput('-')">－</button>
+          <button id="1" class="num" onclick="btnInput('1')">1</button>
+          <button id="2" class="num" onclick="btnInput('2')">2</button>
+          <button id="3" class="num" onclick="btnInput('3')">3</button>
+          <button id="＋" class="op" onclick="btnInput('+')">＋</button>
+          <button id="±" class="num" onclick="btnInput('+/-')">±</button>
+          <button id="0" class="num" onclick="btnInput('0')">0</button>
+          <button id="." class="num" onclick="btnInput('.')">.</button>
+          <button id="＝" class="equal" onclick="btnInput('=')">＝</button>
+        </div>
+      </div>
+    </div>
+    <script src="js/control.js"></script>
+    <script src="js/calc.js"></script>
+  </body>
+</html>

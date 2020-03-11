@@ -1,0 +1,57 @@
+.btn-wrapper .anime-wrapper {
+  width: 200px;
+  height: 200px;
+  margin-right: 0px;
+}
+
+.animebox {
+  animation: animate 5s linear infinite;
+  transform-style: preserve-3d;
+  transform-origin: 100px 100px 0;
+}
+
+.animebox div {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+}
+
+.animebox .box1 {
+  background-color: #ff7675;
+  transform: translateZ(50px);
+}
+
+.animebox .box2 {
+  background-color: #55efc4;
+  transform: rotateY(90deg) translateZ(50px);
+}
+
+.animebox .box3 {
+  background-color: #ffeaa7;
+  transform: rotateY(-90deg) translateZ(50px);
+}
+
+.animebox .box4 {
+  background-color: #a29bfe;
+  transform: rotateX(180deg) translateZ(50px);
+}
+
+.animebox .box5 {
+  background-color: skyblue;
+  transform: rotateY(-90deg) rotateX(90deg) translateZ(50px);
+}
+
+.animebox .box6 {
+  background-color: #fbc531;
+  transform: rotateX(-90deg) translateZ(50px);
+}
+
+@keyframes animate {
+  from {
+    transform: rotateX(0deg), rotateY(0deg) translateX(100px);
+  }
+  to {
+    transform: rotateY(-360deg) rotateX(360deg);
+  }
+}
