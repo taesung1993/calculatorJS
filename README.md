@@ -14,5 +14,5 @@ The calculatorJS is my first work using Javascript. This work consists of 1 html
 
 
 #### 3. Use Calculator
-* you
- + hi
+* you  
+ * hi
