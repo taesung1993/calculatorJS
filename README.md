@@ -6,5 +6,5 @@ The calculatorJS is my first work using Javascript. This work consists of 1 html
     
       
       
-     <img src="https://github.com/taesung1993/calculatorJS/blob/master/images/markdown-firstscreen.png"/ width = "300" height = "300">
+<img src="https://github.com/taesung1993/calculatorJS/blob/master/images/markdown-firstscreen.png"/ width = "300" height = "300">
 
