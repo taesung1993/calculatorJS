@@ -15,5 +15,5 @@ The calculatorJS is my first work using Javascript. This work consists of 1 html
 
 #### 3. Use Calculator
  * You can use the calculator. This calculator support as following function
-  * %: conver float which is less than 1 into percent  
+  1. **%** : conver float which is less than 1 into percent  
         for example, 0.6 -> 60% but no 1.2 -> 120%
